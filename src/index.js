@@ -2,7 +2,7 @@ import React from 'react'; //library itself
 import ReactDOM from 'react-dom/client'; //glue bw react elements and DOM
 import './index.css'; 
 import App from './component/App/index.js'; //app.js
-import registerServiceWorker from './registerServiceWorker';
+import * as serviceWorker from './serviceWorker';
 // import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 
@@ -11,7 +11,7 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-registerServiceWorker();
+serviceWorker.unregister();
 
 // const getCurrentDate = () => {
 //   const date = new Date();
