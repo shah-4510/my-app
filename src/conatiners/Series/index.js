@@ -47,7 +47,7 @@ class Series extends Component{
                     <p>Please enter series name into the input</p>
                 }
                 {
-                    !isFetching && series.length == 0 && seriesName.trim() !== ''
+                    !isFetching && series.length === 0 && seriesName.trim() !== ''
                     &&
                     <p>No TV Series have been found with this name</p>
                 }
